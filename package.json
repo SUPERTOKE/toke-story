@@ -1,0 +1,11 @@
+{
+  "name": "toke-story",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static mirror of story.mctoken.xyz for Vercel",
+  "scripts": {
+    "assets": "node scripts/extract-assets.mjs && node scripts/download-assets.mjs && node scripts/rewrite-html.mjs",
+    "dev": "node scripts/dev-server.mjs",
+    "build": "node -e \"console.log('static site — no build step')\""
+  }
+}

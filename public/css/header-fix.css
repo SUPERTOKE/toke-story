@@ -1,0 +1,110 @@
+/**
+ * Header-only overrides for static mirror (Squarespace Header JS not fully active).
+ * Does not affect page sections below the header.
+ */
+
+/* Transparent fixed header at top of page */
+body.tweak-transparent-header #header.header {
+  background: transparent !important;
+}
+
+body.tweak-transparent-header #header .header-background,
+body.tweak-transparent-header #header .header-background::after {
+  opacity: 0 !important;
+  background: transparent !important;
+}
+
+body.tweak-transparent-header #header:not(.shrink) {
+  background-color: transparent !important;
+}
+
+/* Solid white bar only after scroll (matches Squarespace scroll-back behavior) */
+body.tweak-transparent-header #header.shrink {
+  background-color: hsla(var(--white-hsl), 1) !important;
+}
+
+body.tweak-transparent-header #header.shrink .header-background {
+  opacity: 1 !important;
+  background-color: hsla(var(--white-hsl), 1) !important;
+}
+
+/* Desktop: logo left, social right */
+@media screen and (min-width: 768px) {
+  #header .header-inner.header-layout-nav-center {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+  }
+
+  #header .header-display-desktop {
+    display: flex !important;
+    flex: 1 1 auto;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #header .header-title-nav-wrapper {
+    flex: 0 1 auto;
+    order: 1;
+    min-width: 0;
+  }
+
+  #header .header-title {
+    flex: 0 0 auto;
+    width: auto !important;
+  }
+
+  #header .header-nav {
+    display: none;
+  }
+
+  #header .header-actions.header-actions--right {
+    flex: 0 0 auto;
+    order: 2;
+    width: auto !important;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  #header .header-burger {
+    display: none !important;
+  }
+
+  #header .header-display-mobile {
+    display: none !important;
+  }
+}
+
+/* Logo sizing */
+#header .header-title-logo a {
+  display: inline-block;
+  max-height: 75px;
+}
+
+#header .header-title-logo img {
+  display: block !important;
+  max-height: 75px;
+  width: auto;
+  height: auto;
+}
+
+@media screen and (max-width: 767px) {
+  #header .header-title-logo a,
+  #header .header-title-logo img {
+    max-height: 55px;
+  }
+}
+
+/* Social icons: dark on transparent/white header at top */
+body.tweak-transparent-header #header:not(.shrink) .header-icon svg {
+  fill: hsla(var(--black-hsl), 1);
+}
+
+body.tweak-transparent-header #header.shrink .header-icon svg {
+  fill: hsla(var(--black-hsl), 1);
+}
