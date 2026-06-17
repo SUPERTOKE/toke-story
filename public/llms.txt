@@ -1,0 +1,22 @@
+# Toke Story — story.mctoken.xyz
+
+> The origin story and lore of $TOKE (McToken), the cannabis-inspired community token on Solana. This is a
+> narrative page: how $TOKE began, the Genesis 71 airdrop, the Great McVote era, and the community behind
+> it. For live market data and holder-level on-chain data, use the ecosystem links below.
+
+- Token: **$TOKE** (McToken) · chain: **solana-mainnet**
+- Mint: `AmgUMQeqW8H74trc8UkKjzZWtxBdpS496wh4GLy2mCpo` · decimals: 3 · max supply: 420,000,069
+- Canonical page: https://story.mctoken.xyz/
+- This page is static HTML — its full content is readable without JavaScript.
+
+## The ecosystem
+- [McToken home](https://mctoken.xyz): the project front door — live price, market cap, supply, McVote history. Agent guide: https://mctoken.xyz/llms.txt
+- [TOKE Explorer](https://explorer.mctoken.xyz): every wallet that ever touched $TOKE — anonymous, on-chain-verifiable. Agent guide: https://explorer.mctoken.xyz/llms.txt
+- [TOKE API](https://api.mctoken.xyz/v1/oracle): live machine-readable token data (price, market cap, liquidity).
+
+## Social
+- X: https://x.com/TokeCommunity
+- Discord: https://discord.com/invite/gTYuUCthvC
+
+## Notes
+- Informational only — not financial advice. $TOKE is a community token; always verify on-chain.
